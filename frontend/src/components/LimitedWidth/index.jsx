@@ -1,5 +1,5 @@
 import { Container } from "./styles"
 
-export function LimitedWidthWrapper() {
-  return <Container></Container>
+export function LimitedWidthWrapper({children}) {
+  return <Container>{children}</Container>
 }
