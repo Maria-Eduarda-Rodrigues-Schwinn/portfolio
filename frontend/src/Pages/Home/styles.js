@@ -5,3 +5,7 @@ export const Container = styled.div`
   height: 100%;
   color: ${({ theme }) => theme.COLORS.WHITE};
 `
+
+export const Main = styled.main`
+  padding-top: 200px;
+`
