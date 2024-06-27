@@ -1,4 +1,5 @@
 import { LimitedWidthWrapper } from "../../components/LimitedWidth"
+import { ServicesSection } from "./sections/Services"
 import { HeaderSection } from "./sections/Header"
 import { AboutSection } from "./sections/About"
 import { InfoSection } from "./sections/Info"
@@ -12,6 +13,7 @@ export function Home() {
         <Main>
           <InfoSection />
           <AboutSection />
+          <ServicesSection />
         </Main>
       </LimitedWidthWrapper>
     </Container>
