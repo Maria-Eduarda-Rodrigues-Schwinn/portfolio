@@ -15,5 +15,8 @@ export default {
     DARK_BLUE: "#060d1c",
     PURPLE_500: "#362f65",
     PURPLE: "#9375ed",
+    LIGHT_RED: "#e74c3c",
+    STRONG_YELLOW: "#f39c12",
+    LIGHT_BLUE: "#3498db",
   },
 }
