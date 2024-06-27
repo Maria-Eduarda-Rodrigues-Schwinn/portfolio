@@ -1,6 +1,6 @@
-import sistemas_operacionais_icon from "../../../../assets/icons/sistemas-operacionais.png"
-import ferramentas_dev_icon from "../../../../assets/icons/ferramentas-dev.png"
-import banco_de_dados_icon from "../../../../assets/icons/banco-de-dados.png"
+import operational_systems_icon from "../../../../assets/icons/operational-systems.png"
+import dev_tools_icon from "../../../../assets/icons/dev-tools.png"
+import database_icon from "../../../../assets/icons/database.png"
 import frontend_icon from "../../../../assets/icons/frontend.png"
 import { ServiceCard } from "../../../../components/ServiceCard"
 import backend_icon from "../../../../assets/icons/backend.png"
@@ -29,17 +29,17 @@ export function ServicesSection() {
           listSkills={["Node.js", "Java (Orientação a Objetos)"]}
         />
         <ServiceCard
-          imgIcon={banco_de_dados_icon}
+          imgIcon={database_icon}
           title="Banco de Dados"
           listSkills={["MySQL", "PostgreSQL", "SQLite"]}
         />
         <ServiceCard
-          imgIcon={ferramentas_dev_icon}
+          imgIcon={dev_tools_icon}
           title="Metodologias e Ferramentas de Desenvolvimento"
           listSkills={["Git / GitHub / GitLab", "Docker"]}
         />
         <ServiceCard
-          imgIcon={sistemas_operacionais_icon}
+          imgIcon={operational_systems_icon}
           title="Sistemas Operacionais"
           listSkills={["Linux Ubuntu (avançado)", "Windows (intermediário)"]}
         />
