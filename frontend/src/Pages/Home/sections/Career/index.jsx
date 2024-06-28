@@ -19,7 +19,7 @@ export function CareerSection() {
               title="Estudante"
               time="2010 - 2023"
               local="Escola Municipal de Ensino Fundamental Dom Pedro ||, Escola Municipal de Ensino Fundamental Cardeal Leme, Colégio Estadual Monte Alverne"
-              description="Ensino fundamental e médio obrigatório."
+              description="Ensino fundamental e médio obrigatório"
             />
             <SummaryCard
               title="Estudante Técnico"
