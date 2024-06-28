@@ -14,13 +14,13 @@ export const Content = styled.div`
 
   h2 {
     color: ${({ theme }) => theme.COLORS.WHITE};
-    font-family: ${({ theme }) => theme.FONTS.ROBOTO_SLAB};
+    font-family: ${({ theme }) => theme.FONTS.MONTSERRAT};
     font-weight: 500;
     margin-bottom: 10px;
   }
 
   h4 {
-    font-family: ${({ theme }) => theme.FONTS.ROBOTO_SLAB};
+    font-family: ${({ theme }) => theme.FONTS.MONTSERRAT};
     color: ${({ theme }) => theme.COLORS.PURPLE};
     font-weight: normal;
     margin-bottom: 30px;
