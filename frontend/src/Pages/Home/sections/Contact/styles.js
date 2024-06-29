@@ -17,6 +17,10 @@ export const Content = styled.div`
 
     margin-bottom: 50px;
   }
+
+  @media (max-width: 670px) {
+    flex-direction: column;
+  }
 `
 
 export const FormArea = styled.div`

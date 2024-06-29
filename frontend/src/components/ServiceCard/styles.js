@@ -22,6 +22,14 @@ export const Box = styled.div`
     transform: scale(1.02);
     color: ${({ theme }) => theme.COLORS.PURPLE};
   }
+
+  @media (max-width: 670px) {
+    width: 300px;
+  }
+
+  @media (max-width: 660px) and (min-width: 560px) {
+    width: 250px;
+  }
 `
 
 export const Title = styled.h1`

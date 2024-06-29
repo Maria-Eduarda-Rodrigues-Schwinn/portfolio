@@ -25,6 +25,21 @@ export const Wrapper = styled.div`
   height: 300px;
   overflow: hidden;
   position: relative;
+
+  @media (max-width: 850px) {
+    width: 350px;
+    height: 250px;
+  }
+
+  @media (max-width: 760px) {
+    width: 300px;
+    height: 200px;
+  }
+
+  @media (max-width: 660px) and (min-width: 560px) {
+    width: 250px;
+    height: 150px;
+  }
 `
 
 export const Card = styled.div`

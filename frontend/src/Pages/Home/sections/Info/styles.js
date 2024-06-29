@@ -28,4 +28,13 @@ export const Container = styled.div`
   img {
     filter: drop-shadow(1px 1px 10px ${({ theme }) => theme.COLORS.PURPLE});
   }
+
+  @media (max-width: 610px) {
+    flex-direction: column-reverse;
+    
+    img {
+      max-width: 200px;
+      margin-bottom: 50px;
+    }
+  }
 `

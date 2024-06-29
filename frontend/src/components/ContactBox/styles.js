@@ -26,4 +26,19 @@ export const Box = styled.div`
     flex-direction: column;
     gap: 5px;
   }
+
+  @media (max-width: 790px) and (min-width: 670px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media (max-width: 320px) and (min-width: 444px) {
+    h3 {
+      font-size: 15px;
+    }
+
+    a {
+      font-size: 12px;
+    }
+  }
 `
