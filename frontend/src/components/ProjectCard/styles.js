@@ -89,6 +89,8 @@ export const Card = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    overflow: auto;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -98,6 +100,7 @@ export const Card = styled.div`
       margin: 0;
       font-size: 24px;
       font-family: ${({ theme }) => theme.FONTS.MONTSERRAT};
+      margin-top: 40px;
     }
 
     p {
@@ -118,6 +121,24 @@ export const Card = styled.div`
         width: 25px;
         height: 25px;
       }
+    }
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(16, 22, 36, 0.5);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: ${({ theme }) => theme.COLORS.PURPLE};
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: ${({ theme }) => theme.COLORS.PURPLE_500};
     }
   }
 
