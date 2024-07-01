@@ -31,7 +31,8 @@ export const FormArea = styled.div`
     display: none;
   }
 
-  input, textarea {
+  input,
+  textarea {
     font-family: ${({ theme }) => theme.FONTS.MONTSERRAT};
     font-size: 14px;
     width: 100%;
@@ -44,6 +45,24 @@ export const FormArea = styled.div`
     color: ${({ theme }) => theme.COLORS.WHITE};
 
     margin: 25px 0;
+    resize: vertical;
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(16, 22, 36, 0.5);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: ${({ theme }) => theme.COLORS.PURPLE};
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: ${({ theme }) => theme.COLORS.PURPLE_500};
+    }
   }
 
   button {
