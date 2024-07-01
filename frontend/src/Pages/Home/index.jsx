@@ -20,6 +20,7 @@ export function Home() {
           <CareerSection />
           <ProjectsSection />
           <ContactSection />
+          {/* SOFT SKILLS? ideias em: https://www.youtube.com/watch?v=d8MReiqqElE min=9:20*/}
         </Main>
         <Footer>
           <p>

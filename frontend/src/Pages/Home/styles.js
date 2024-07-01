@@ -11,7 +11,7 @@ export const Main = styled.main`
 `
 
 export const Footer = styled.footer`
-margin-top: 50px;
+  margin-top: 50px;
   font-family: ${({ theme }) => theme.FONTS.OPENS_SANS};
   font-size: 15px;
 
