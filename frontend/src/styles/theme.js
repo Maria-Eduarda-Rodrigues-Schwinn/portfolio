@@ -14,6 +14,7 @@ export default {
     DARK_GRAY: "#101624",
     DARK_BLUE: "#060d1c",
     PURPLE_500: "#362f65",
+    PURPLE_500_OPACITY: "rgba(54, 47, 101, 0.95)",
     PURPLE: "#9375ed",
     LIGHT_RED: "#e74c3c",
     STRONG_YELLOW: "#f39c12",
