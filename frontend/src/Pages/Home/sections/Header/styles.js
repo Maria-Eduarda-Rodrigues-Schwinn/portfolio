@@ -22,8 +22,15 @@ export const Wrapper = styled.div`
 `
 
 export const NavBar = styled.div`
-  display: flex;
-  gap: 20px;
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  label img {
+    width: 30px;
+    height: 30px;
+  }
 
   a {
     padding: 10px 5px;
@@ -37,6 +44,40 @@ export const NavBar = styled.div`
 
     &:hover {
       border-bottom: 2px solid ${({ theme }) => theme.COLORS.PURPLE};
+    }
+  }
+
+  label,
+  input {
+    display: none;
+  }
+
+  @media (max-width: 620px) {
+    label {
+      display: flex;
+    }
+
+    input:checked + label + .menu {
+      display: flex;
+      align-items: center;
+      backdrop-filter: blur(30px);
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      gap: 50px;
+      padding: 50px 20px;
+      background-color: ${({ theme }) => theme.COLORS.PURPLE_500_OPACITY};
+
+      border-radius: 0 0 20px 20px;
+      position: fixed;
+      top: 104px;
+      right: 15px;
+      z-index: 10;
+      height: fit-content;
+      width: 200px;
+      box-shadow: -3px 0 11px 13px rgba(0, 0, 0, 0.3);
     }
   }
 `
