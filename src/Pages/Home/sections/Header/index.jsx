@@ -38,7 +38,7 @@ export function HeaderSection() {
     <Header>
       <LimitedWidthWrapper>
         <Wrapper>
-          <a href="/portfolio">
+          <a href={`${import.meta.env.VITE_BASE_URL}`}>
             <img
               src={logo}
               alt="Logo com ícone de lâmpada roxa com nome de Maria Eduarda Schwinn"
@@ -58,7 +58,7 @@ export function HeaderSection() {
               />
             </label>
             <div className="menu" ref={menuRef}>
-              <a href="/portfolio" onClick={closeMenu}>
+              <a href={`${import.meta.env.VITE_BASE_URL}`} onClick={closeMenu}>
                 Início
               </a>
               <a href="#summary" onClick={closeMenu}>
