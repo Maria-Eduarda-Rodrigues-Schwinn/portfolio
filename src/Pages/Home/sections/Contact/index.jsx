@@ -21,6 +21,9 @@ export function ContactSection() {
         message,
       })
       alert("Feedback enviado com sucesso!")
+      setName("")
+      setEmail("")
+      setMessage("")
     } catch (error) {
       console.error("Erro ao enviar feedback", error)
     }
@@ -52,34 +55,34 @@ export function ContactSection() {
         </div>
         <FormArea>
           <h2>Comentário</h2>
-          <label htmlFor="name">Digite seu nome</label>
-          <input
-            id="name"
-            type="text"
-            placeholder="Seu nome"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <label htmlFor="email">Digite seu email</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Seu email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label htmlFor="message">Deixe seu comentário</label>
-          <textarea
-            rows="5"
-            cols="25"
-            id="message"
-            type="textarea"
-            placeholder="Sua mensagem"
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <button type="submit" onClick={handleSubmit}>
-            Enviar mensagem
-          </button>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="name">Digite seu nome</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Seu nome"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <label htmlFor="email">Digite seu email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Seu email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label htmlFor="message">Deixe seu comentário</label>
+            <textarea
+              rows="5"
+              cols="25"
+              id="message"
+              type="textarea"
+              placeholder="Sua mensagem"
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <button type="submit">Enviar mensagem</button>
+          </form>
         </FormArea>
       </Content>
     </div>
