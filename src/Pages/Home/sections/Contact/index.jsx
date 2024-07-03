@@ -15,17 +15,19 @@ export function ContactSection() {
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
-      await axios.post("http://localhost:3000/feedback", {
+      const response = await axios.post("/.netlify/functions/feedback'", {
         name,
         email,
         message,
       })
+      console.log(response.data.message)
       alert("Feedback enviado com sucesso!")
       setName("")
       setEmail("")
       setMessage("")
     } catch (error) {
       console.error("Erro ao enviar feedback", error)
+      console.error("Erro ao enviar feedback!")
     }
   }
 
