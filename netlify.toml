@@ -3,3 +3,8 @@
 
 [dev]
   functionsPort = 34567
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

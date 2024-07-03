@@ -1,27 +1,8 @@
-const sqlite3 = require("sqlite3").verbose()
-const path = require("path")
-const fs = require("fs")
+const { createClient } = require("@supabase/supabase-js")
 
-const dbDir = path.resolve(__dirname, "db")
-if (!fs.existsSync(dbDir)) {
-  fs.mkdirSync(dbDir)
-}
-
-const dbPath = path.join(dbDir, "feedbacks.db")
-const db = new sqlite3.Database(dbPath, (error) => {
-  if (error) {
-    console.error("Erro ao abrir o banco de dados", error.message)
-  }
-})
-
-db.serialize(() => {
-  db.run(`CREATE TABLE IF NOT EXISTS feedback (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-    email TEXT,
-    message TEXT
-  )`)
-})
+const supabaseUrl = process.env.SUPABASE_URL
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -33,20 +14,22 @@ exports.handler = async (event) => {
 
   const { name, email, message } = JSON.parse(event.body)
 
-  return new Promise((resolve, reject) => {
-    const query = "INSERT INTO feedback (name, email, message) VALUES (?, ?, ?)"
-    db.run(query, [name, email, message], function (error) {
-      if (error) {
-        resolve({
-          statusCode: 500,
-          body: JSON.stringify({ message: "Erro ao salvar feedback" }),
-        })
-      } else {
-        resolve({
-          statusCode: 200,
-          body: JSON.stringify({ message: "Feedback enviado com sucesso!" }),
-        })
-      }
-    })
-  })
+  const { data, error } = await supabase
+    .from("feedback")
+    .insert([{ name, email, message }])
+
+  if (error) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({
+        message: "Erro ao salvar feedback",
+        error: error.message,
+      }),
+    }
+  }
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "Feedback enviado com sucesso!" }),
+  }
 }
