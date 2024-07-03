@@ -15,7 +15,7 @@ export function ContactSection() {
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
-      const response = await axios.post("/.netlify/functions/feedback'", {
+      const response = await axios.post("/.netlify/functions/feedback", {
         name,
         email,
         message,
