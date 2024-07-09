@@ -12,8 +12,7 @@ export function AboutSection() {
           <h2>Olá! Eu sou Maria Eduarda</h2>
           <h4>Desenvolvedora de Software</h4>
           <p>
-            Tenho 19 anos e estou em busca da minha primeira experiência
-            profissional como desenvolvedora web.
+            Tenho 19 anos e faço estágio em Programação na CWI Software.
           </p>
           <p>
             Atualmente, estou fazendo Curso Técnico em Desenvolvimento de
