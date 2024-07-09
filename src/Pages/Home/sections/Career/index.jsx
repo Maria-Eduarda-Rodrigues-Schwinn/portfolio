@@ -47,6 +47,12 @@ export function CareerSection() {
               local="Comércio de Combustíveis Nevoeiro LTDA"
               description="Técnico Agrícola"
             />
+            <SummaryCard
+              title="Estágio de Programação"
+              time="2024 - ..."
+              local="CWI Software"
+              description="Auxiliar em manutenção de banco de dados e desenvolvimento de sistemas"
+            />
           </Cards>
         </Section>
       </Content>
