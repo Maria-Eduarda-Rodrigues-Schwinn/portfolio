@@ -20,6 +20,7 @@ export function ProjectsSection() {
           />
         ))}
       </Content>
+      {/*etiqueta de projeto responsivo?*/}
     </div>
   )
 }
