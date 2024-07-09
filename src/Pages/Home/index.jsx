@@ -21,6 +21,7 @@ export function Home() {
           <ProjectsSection />
           <ContactSection />
           {/* SOFT SKILLS? ideias em: https://www.youtube.com/watch?v=d8MReiqqElE min=9:20*/}
+          {/* certificados do LinkedIn?*/}
         </Main>
         <Footer>
           <p>
