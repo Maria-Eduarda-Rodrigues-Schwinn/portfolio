@@ -1,7 +1,6 @@
 import { LimitedWidthWrapper } from "../../components/LimitedWidth"
 import { ProjectsSection } from "./sections/Projects"
 import { ServicesSection } from "./sections/Services"
-import { ContactSection } from "./sections/Contact"
 import { Container, Main, Footer } from "./styles"
 import { CareerSection } from "./sections/Career"
 import { HeaderSection } from "./sections/Header"
@@ -19,7 +18,7 @@ export function Home() {
           <ServicesSection />
           <CareerSection />
           <ProjectsSection />
-          <ContactSection />
+          {/* <ContactSection /> */}
           {/* SOFT SKILLS? ideias em: https://www.youtube.com/watch?v=d8MReiqqElE min=9:20*/}
           {/* certificados do LinkedIn?*/}
         </Main>
