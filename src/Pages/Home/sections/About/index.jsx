@@ -30,12 +30,12 @@ export function AboutSection() {
                 <td>Nascimento</td>
                 <td>: Maio 20, 2005</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td>Celular</td>
                 <td>
                   : <a href="tel:+5551980622891">+55 (51) 98062-2891</a>
                 </td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>Email</td>
                 <td>

@@ -41,7 +41,7 @@ export function ContactSection() {
                         title="Email"
                         description="maria.eduarda.schwinn@gmail.com"
                     />
-                    <ContactBox
+                    {/* <ContactBox
                         link="tel:+5551980622891"
                         icon={telephone_icon}
                         title="Telefone"
@@ -51,7 +51,7 @@ export function ContactSection() {
                         icon={localization_icon}
                         title="Endereço"
                         description="São Martinho, Santa Cruz do Sul - RS, Brasil"
-                    />
+                    /> */}
                 </div>
                 {/* <FormArea>
           <h2>Comentário</h2>
