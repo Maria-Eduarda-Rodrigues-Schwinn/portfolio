@@ -12,7 +12,7 @@ export function AboutSection() {
           <h2>Olá! Eu sou Maria Eduarda</h2>
           <h4>Desenvolvedora de Software</h4>
           <p>
-            Tenho 19 anos e faço estágio em Programação na CWI Software.
+            Tenho 19 anos e sou desenvolvedora de software na CWI Software.
           </p>
           <p>
             Atualmente, estou fazendo Curso Técnico em Desenvolvimento de
@@ -21,7 +21,7 @@ export function AboutSection() {
           <p>
             Sou apaixonada por <span className="highlighted">códigos</span>,{" "}
             <span className="highlighted-red">cores</span> e{" "}
-            <span className="highlighted-blue">lógica</span>. Estou animada para
+            <span className="highlighted-blue">lógica</span>. Sou animada para
             transformar essa paixão em projetos reais &#128640;.
           </p>
           <Table>
