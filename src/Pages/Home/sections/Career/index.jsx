@@ -49,9 +49,15 @@ export function CareerSection() {
             />
             <SummaryCard
               title="Estágio de Programação"
-              time="2024 - ..."
+              time="2024 - 2025"
               local="CWI Software"
               description="Auxiliar em manutenção de banco de dados e desenvolvimento de sistemas"
+            />
+            <SummaryCard
+              title="Desenvolvedor de Software"
+              time="2025 - ..."
+              local="CWI Software"
+              description="Atuação no desenvolvimento Back-End para o cliente Porto Seguro, com foco na área do PortoBank. Responsável pelo desenvolvimento de soluções em micro serviços utilizando ferramentas como Spring, com comunicação via APIs, filas (SQS) e tópicos (SNS) da AWS. Experiência no monitoramento de dados em bancos como PostgreSQL e Databricks, além da realização de testes unitários (JUnit/Jupiter) e integrados (Cucumber/MockMvc/Wiremock/LocalStack) utilizando Java"
             />
           </Cards>
         </Section>
